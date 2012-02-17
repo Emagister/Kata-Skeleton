@@ -1,0 +1,12 @@
+{
+    "name": "The kata name",
+    "version": "0.1.0",
+
+    "require": {
+        "symfony/class-loader": ">=2.0.10"
+    },
+
+    "config": {
+        "bin-dir": "bin/"
+    }
+}
