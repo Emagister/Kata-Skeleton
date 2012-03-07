@@ -1,6 +1,13 @@
 <?php
 
-require dirname(__DIR__) . '/vendor/.composer/autoload.php';
+$vendorDir = dirname(__DIR__) . '/vendor';
+
+if (!@include($vendorDir . '/.composer/autoload.php')) {
+    die('You must set up the project dependencies, run the following commands:
+    wget http://getcomposer.org/composer.phar
+    php composer.phar install
+');
+}
 
 use Symfony\Component\ClassLoader\UniversalClassLoader;
 
